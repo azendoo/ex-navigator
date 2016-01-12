@@ -42,7 +42,7 @@ export default {
 
   resetTo(route) {
     return this.__navigator.resetTo(route);
-  }
+  },
 
   immediatelyResetRouteStack(routeStack) {
     return this.__navigator.immediatelyResetRouteStack(routeStack);
