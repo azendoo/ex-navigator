@@ -17,6 +17,12 @@ npm install @exponent/react-native-navigator --save
 
 ExNavigator is compatible with React Native 0.16 and newer.
 
+## Example projects
+Github user [Thorenandresen](https://github.com/Thorbenandresen) has two very simple bare bones projects showing ExNavigator in use:
+* [ExNavigatorExample](https://github.com/Thorbenandresen/ExNavigatorExample)
+* [ExNavigatorExampleModal](https://github.com/Thorbenandresen/ExNavigatorExampleModal)
+
+
 ## Usage
 
 ExNavigator's component API looks very similar to Navigator's. You specify a `routeStack` and/or `initialRoute`, along with some styles. ExNavigator will render the navigation bar for you and accepts some props to style its contents. See `ExNavigator.propTypes` for the list of accepted props.
@@ -146,3 +152,7 @@ class HomeScene extends React.Component {
   }
 }
 ```
+
+### Flux-based navigation
+
+You can use the ExNavigator routing framework using Actions to change the route instead of passing around a navigator. [react-native-router-flux](https://github.com/aksonov/react-native-router-flux) is built on top of ExNavigator.
