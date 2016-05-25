@@ -116,7 +116,7 @@ let YourRouter = {
         return (
           <Button onPress={() => { console.log('Tapped right button'); }}>
             Log
-          <Button>
+          </Button>
         );
       },
     };
@@ -151,6 +151,19 @@ class HomeScene extends React.Component {
     );
   }
 }
+```
+
+### iOS Scene Transition Shadow
+
+The default scene config, `FloatFromRight`, has the ability to display a shadow just like it does natively on iOS. However, you need to define your own shadow. Add the following styles in the `sceneStyle` property on your `ExNavigator` component:
+
+```
+sceneStyle={{
+  overflow: 'visible',
+  shadowColor: '#000',
+  shadowOpacity: 0.5,
+  shadowRadius: 6
+}}
 ```
 
 ### Flux-based navigation
